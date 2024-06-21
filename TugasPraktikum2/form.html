@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hubungi Saya</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 5px 0;
+        text-align: center;
+      }
+      form {
+        width: 60%;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+      textarea {
+        height: 120px;
+      }
+      button[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      button[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Hubungi Saya</h1>
+    </header>
+
+    <main>
+      <form action="#" method="POST">
+        <label for="nama">Nama Pengirim:</label>
+        <input type="text" id="nama" name="nama" placeholder="M. Rizky Suherlan" required />
+
+        <label for="email">Email Pengirim:</label>
+        <input type="email" id="email" name="email" required placeholder="rizky@gmail.com" />
+
+        <label for="telepon">No Telepon Pengirim:</label>
+        <input
+          type="tel"
+          id="telepon"
+          name="telepon"
+          pattern="[0-9]{10,12}"
+          placeholder="081234567890"
+          required
+        />
+
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan" required></textarea>
+
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; M. Rizky Suherlan</p>
+    </footer>
+  </body>
+</html>
