@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hubungi Saya</title>
+  <link rel="stylesheet" href="./asset/css/form.css">
+</head>
+<body>
+  <header>
+    <h1>Hubungi Saya</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="form-container">
+        <form action="#" method="POST" class="contact-form">
+          <label for="nama">Nama Pengirim:</label>
+          <input type="text" id="nama" name="nama" placeholder="M. Rizky Suherlan" required />
+
+          <label for="email">Email Pengirim:</label>
+          <input type="email" id="email" name="email" required placeholder="rizky@gmail.com" />
+
+          <label for="telepon">No Telepon Pengirim:</label>
+          <input
+            type="tel"
+            id="telepon"
+            name="telepon"
+            pattern="[0-9]{10,12}"
+            placeholder="081234567890"
+            required
+          />
+
+          <label for="pesan">Pesan:</label>
+          <textarea id="pesan" name="pesan" required></textarea>
+
+          <button type="submit">Kirim Pesan</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; M. Rizky Suherlan</p>
+  </footer>
+</body>
+</html>
